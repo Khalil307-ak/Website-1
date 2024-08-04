@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">تعلم لغة بايتون</title>
+    <link rel="stylesheet" href="s2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 data-i18n="site-title">تعلم لغة بايتون</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-i18n="home">الرئيسية</a></li>
+                    <li><a href="#about" data-i18n="about">حول</a></li>
+                    <li><a href="#courses" data-i18n="courses">الدورات</a></li>
+                    <li><a href="#contact" data-i18n="contact">اتصل بنا</a></li>
+                </ul>
+                <select id="language-select">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2 data-i18n="home-welcome">مرحبا بكم في موقع تعلم لغة بايتون</h2>
+            <p data-i18n="home-description">هنا ستجد كل الموارد والدورات اللازمة لتعلم لغة بايتون من البداية إلى الاحتراف.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 data-i18n="about-title">حول بايتون</h2>
+            <p data-i18n="about-description">بايتون هي لغة برمجة عالية المستوى، مشهورة بسهولتها وبساطتها. تستخدم على نطاق واسع في تطوير البرمجيات، تحليل البيانات، الذكاء الاصطناعي، وتطوير الويب.</p>
+            <p data-i18n="about-features">تتميز بايتون بمكتبات قوية وسهلة الاستخدام مما يجعلها مثالية للمبتدئين والمحترفين على حد سواء.</p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2 data-i18n="courses-title">الدورات</h2>
+            <div class="course">
+                <h3 data-i18n="course-intro">مقدمة إلى بايتون</h3>
+                <p data-i18n="course-intro-desc">دورة شاملة للمبتدئين، تغطي الأساسيات وكيفية البدء مع بايتون.</p>
+            </div>
+            <div class="course">
+                <h3 data-i18n="course-oo">برمجة الكائنات في بايتون</h3>
+                <p data-i18n="course-oo-desc">دورة متقدمة تغطي البرمجة الكائنية وكيفية استخدامها في بايتون.</p>
+            </div>
+            <div class="course">
+                <h3 data-i18n="course-data">تحليل البيانات ببايتون</h3>
+                <p data-i18n="course-data-desc">دورة متخصصة تغطي كيفية استخدام بايتون في تحليل البيانات وإجراء التحليلات الإحصائية.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-i18n="contact-title">اتصل بنا</h2>
+            <p data-i18n="contact-description">يمكنك التواصل معنا عبر وسائل التواصل الاجتماعي التالية:</p>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/profile.php?id=100061615326332&mibextid=LQQJ4d" data-i18n="facebook">فيسبوك</a></li>
+                <li><a href="https://x.com/khalilakra95075?s=21" data-i18n="twitter">تويتر</a></li>
+                <li><a href="https://www.instagram.com/universe_friend_169?igsh=Y2NhYWNzeWtiemJz&utm_source=qr" data-i18n="instagram">إنستغرام</a></li>
+                <li><a href="mailto:khalil.akram307@gmail.com" data-i18n="email">بريد إلكتروني</a></li>
+            </ul>
+            
+            <div class="dropdown">
+                <button class="dropbtn" data-i18n="developer">معلومات المطور</button>
+                <div class="dropdown-content">
+                    <p data-i18n="developer-name">اسم المطور: خليل اكرام</p>
+                    <p data-i18n="developer-age">عمر المطور: 14 سنة</p>
+                    <p data-i18n="developer-country">الدولة: المغرب</p>
+                    <p data-i18n="developer-city">المدينة: مراكش</p>
+                    <p data-i18n="contact-description">اتصل بي عبر:</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100061615326332&mibextid=LQQJ4d" data-i18n="facebook">فيسبوك</a></li>
+                        <li><a href="https://x.com/khalilakra95075?s=21" data-i18n="twitter">تويتر</a></li>
+                        <li><a href="https://www.instagram.com/universe_friend_169?igsh=Y2NhYWNzeWtiemJz&utm_source=qr" data-i18n="instagram">إنستغرام</a></li>
+                        <li><a href="mailto:khalil.akram307@gmail.com" data-i18n="email">بريد إلكتروني</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <form action="mailto:khalil.akram307@gmail.com" method="post" enctype="text/plain">
+                <h3>أرسل لنا رسالة</h3>
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">أرسل</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer">&copy; 2024 تعلم لغة بايتون. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js2.js"></script>
+</body>
+</html>
